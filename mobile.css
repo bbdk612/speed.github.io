@@ -206,3 +206,7 @@ img.car {
     text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
 	outline: none;
 }
+
+div.btn a {
+	pointer-events: none;
+}
