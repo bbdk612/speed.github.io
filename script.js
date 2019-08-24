@@ -3,7 +3,7 @@
 $("#dialog").hide(); 
 $('ul').hide();
 $('#roadsCar').hide();
-$('div.first, div.first a').on('click', function(){
+$('div.first').on('click', function(){
 	$('ul.first').slideToggle(500);
 });
 
