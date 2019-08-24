@@ -207,6 +207,7 @@ img.car {
 	outline: none;
 }
 
-div.btn a {
-	pointer-events: none;
+div.btn p {
+	font-family: sans-serif;
+	font-weight: bolder;
 }
