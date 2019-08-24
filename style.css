@@ -1,0 +1,244 @@
+@font-face {
+	font-family: "Antique Titul";
+	src: url("fonts/17629.ttf");
+}
+
+@font-face {
+	font-family: "Thin Pixels";
+	src: url("fonts/17660.otf");
+}
+
+@font-face {
+	font-family: "Impact";
+	src: url("fonts/impact.ttf");
+
+}
+
+@font-face {
+	font-family: "CiscoSans";
+	src: url("fonts/CiscoSans.ttf");
+}
+
+body{
+	background-color: #f4ed6e;	
+	margin: 0px;
+}
+
+header {
+	background-color: #f3ae69;
+	margin: 0px;
+	height: 72px;
+	text-align: center; 
+	padding: 10px;
+	color: black;
+}
+
+#header {
+	position: relative;
+	bottom: 10px;
+	font-family: "Thin Pixels";
+	color: black;
+}
+
+main {
+	margin: 10px 50px;
+	position: relative;
+	background-color: #aec8ec; 
+	border-radius: 40px;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 700px; 
+}
+
+
+main h1{
+	font-family: "Impact";
+	color: #282828;
+	border-bottom: 1px solid white;
+}
+
+input {
+	font-size: 16px;
+	padding: 10px;
+	display: block;
+	width: 200px;
+	border: none;
+    margin: 5px 0px;
+    border-radius: 10px;
+}
+
+.s {
+	position: relative;
+	top: 60px;
+}
+
+img.g {
+	width: 150px;
+}
+
+img {
+	width: 100px;
+	margin: 10px;
+}
+
+div.btn {
+	border: none;
+	text-align: center;
+	padding: 10px;
+	width: 120px;
+	margin: 10px;
+	margin-bottom: 0px;
+}
+
+div.choose {
+	background-color: #6da6f5;
+	position: relative;
+	left: 40px;
+	color: white;
+}
+
+ul {
+	border-radius: 10px;
+	background-color: #6da6f5;
+	width: 150px;
+	position: absolute;
+	box-shadow: 0 0 10px 2px #505050;
+	z-index: 1;
+}
+
+li {
+    list-style-type: none; 
+}
+
+div.start {
+	background-color : #f27a7a;
+	color: black;
+	padding: 10px;
+	position:relative;
+	left: 39%;
+	top: 150px;
+	font-family: "Thin Pixels";
+	font-size: 50px;
+	border-radius: 10px;
+	width: 250px;
+	height: 100px;
+}
+
+div.start a {
+	position: relative;
+	top: 22px;
+}
+
+p {
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+#chooseFeald {
+	position: relative;
+	left: 20%;
+	width: 250px;
+}
+
+#inputFeald {
+	position: absolute;
+	left: 50%;
+	bottom: 64%;
+}
+
+img.car {
+	position: relative;
+	top: 69px;
+	width: 150px;
+}
+
+#roadsCar {
+	height: 50%;
+}
+
+#firstRoad {
+	margin: 10px;
+	height: 40%;
+	border-bottom: 5px solid black;
+	background-color: #6da6f5;
+	border-radius: 10px;
+}
+
+#secondRoad {
+	margin: 10px;
+	height: 40%;
+	border-bottom: 5px solid black;
+	background-color: #6da6f5;
+	border-radius: 10px;
+}
+
+
+/* Делаем затемнение заднего плана */
+.back-dialog{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+/* Позиционируем блок с контентом */
+.dialog-content{
+    position: relative;
+	top: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 0 10 0 10;
+    margin:40px auto 0px auto;
+    min-width:150px;
+    max-width:800px;
+    min-height: 150px;
+    max-height: 800px;
+    padding-bottom: 10px;
+    background-color:  #e98585;
+    border-radius: 10px;
+}
+/* Позиционируем верхний бар */
+.dialog-title{
+    margin: 0 -10 0 -10;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    height: 30px;
+    background-color: #3498DB;
+    color: #fff;
+}
+
+.dialog-title span{
+    font-size: 25px;
+    padding-left: 10px;
+	font-family: "CiscoSans";
+}
+/* Делаем кнопку закрытия окна */
+.close-dialog{
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    color: #fff;
+    background-color: #2574A9;
+    height: 30px;
+    width: 30px;
+    border:0;
+    text-decoration: none;
+}
+
+.dialog-text {
+	text-align: center;
+	font-family: "CiscoSans";
+}
+.close-dialog:before{
+    font-family: Arial;
+    color: rgba(255, 255, 255, 0.9);
+    content: "x";
+    font-size: 20px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+	outline: none;
+}
