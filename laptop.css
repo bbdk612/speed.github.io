@@ -186,7 +186,7 @@ img.car {
 /* Позиционируем блок с контентом */
 .dialog-content{
     position: relative;
-	top: 300px; 
+	top: 150px; 
     overflow: hidden;
     overflow-y: auto;
     padding: 0 10 0 10;
@@ -197,7 +197,8 @@ img.car {
     max-height: 800px;
     padding-bottom: 10px;
     background-color: #e98585;
-    border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
 }
 /* Позиционируем верхний бар */
 .dialog-title{
