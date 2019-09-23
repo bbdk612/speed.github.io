@@ -110,9 +110,17 @@ div.choose {
 }
 
 div.start {
+	width: 90%;
+	height: 40px;
 	background-color : #f27a7a;
 	color: black; 
 	font-family: "Thin Pixels";
+}
+
+div.start  a {
+	position: relative;
+	top: 3px;
+	font-size: 35px;
 }
 
 p {
@@ -142,6 +150,7 @@ img.car {
 	top: 13px;
 	right: 5px;
 }
+
 
 .back-dialog{
     width:100%;
@@ -205,6 +214,11 @@ img.car {
     font-size: 20px;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
 	outline: none;
+}
+
+.dialog-text {
+	position: relative;
+	left: 15%;
 }
 
 div.btn p {
