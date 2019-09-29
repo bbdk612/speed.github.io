@@ -5,3 +5,5 @@
 ***
 Для изучения СSS-разметки \(для настольных компьютеров [сюда](https://github.com/bbdk612/speedlearning/blob/master/style.css)\)
 \(для планшетов [сюда](https://github.com/bbdk612/speedlearning/blob/master/laptop.css)\) \(для мобильных устройств [сюда](https://github.com/bbdk612/speedlearning/blob/master/mobile.css)\)
+***
+Для изучения JQuery скрипта [сюда](https://github.com/bbdk612/speedlearning/blob/master/script.js)
