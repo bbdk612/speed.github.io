@@ -1,5 +1,3 @@
-
-
 $("#dialog").hide(); 
 $('ul').hide();
 $('#roadsCar').hide();
