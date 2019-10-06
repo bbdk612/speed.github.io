@@ -20,7 +20,7 @@
 }
 
 body{
-	background-color: #f4ed6e;	
+	background-color: #f4ed6e;
 	margin: 0px;
 }
 
@@ -28,7 +28,7 @@ header {
 	background-color: #f3ae69;
 	margin: 0px;
 	height: 72px;
-	text-align: center; 
+	text-align: center;
 	padding: 10px;
 	color: black;
 }
@@ -45,9 +45,9 @@ h1 {
 }
 
 main {
-	margin: 10px 50px;
+	margin: 10px 8px;
 	position: relative;
-	background-color: #aec8ec; 
+	background-color: #aec8ec;
 	border-radius: 40px;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -80,8 +80,8 @@ ul {
 }
 
 li {
-    list-style-type: none; 
-	
+    list-style-type: none;
+
 }
 
 img.g {
@@ -113,7 +113,7 @@ div.start {
 	width: 90%;
 	height: 40px;
 	background-color : #f27a7a;
-	color: black; 
+	color: black;
 	font-family: "Thin Pixels";
 }
 
@@ -186,7 +186,7 @@ img.car {
     height: 30px;
     background-color: #3498DB;
     color: #fff;
-	
+
 }
 
 .dialog-title span{
