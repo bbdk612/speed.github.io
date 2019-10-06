@@ -1,21 +1,23 @@
-$("#dialog").hide(); 
+$("#dialog").hide();
 $('ul').hide();
 $('#roadsCar').hide();
 $('div.first').on('click', function(){
-	$('ul.first').slideToggle(500);
+	$('ul.first').slideDown(500);
 });
 
 $('div.second').on('click', function(){
-	$('ul.second').slideToggle(500);
+	$('ul.second').slideDown(500);
 });
 
 $('img.fli').on('click', function(){
 	var srcLi = $(this).attr('src');
 	$('img.first').attr('src', srcLi);
+	$('ul.first').slideUp(250);
 });
 
 $('img.sli').on('click', function(){
 	$('img.second').attr('src', ($(this).attr('src')));
+	$('ul.second').slideUp(250);
 });
 
 $("div.start").on('click', function() {
@@ -26,7 +28,7 @@ $("div.start").on('click', function() {
 	var speed2 = +$('input.s').val();
 	if (speed2 == 0){
 		speed2 = 20;
-	}	
+	}
 	$('div.hide').slideUp(500);
 	$('#roadsCar').slideDown(1000);
 	var widthField1 = +$('#firstRoad').width();
@@ -46,32 +48,32 @@ $("div.start").on('click', function() {
 		$('img.second.car').animate({left:  (widthField1 - (+$('img.second.car').width() + 10)) + 'px'}, t2 * 100, function(){
 			$('img.car').css({left:	'5px'});
 			setTimeout(opendialog2(), 1000);
-			
+
 				});
 			} else if (t1 == t2) {
 				$('img.first.car').animate({left:  (widthField1 - (+$('img.first.car').width() + 10)) + 'px'}, t1 * 100);
-				$('img.second.car').animate({left:  (widthField1 - (+$('img.second.car').width() + 10)) + 'px'}, t2 * 100, function(){			
+				$('img.second.car').animate({left:  (widthField1 - (+$('img.second.car').width() + 10)) + 'px'}, t2 * 100, function(){
 				$('img.car').css({left:  '5px'});
 				setTimeout(opendialog3(), 1000);
-				
+
 			});
 		}
 	}, 1000)
 });
 
     function opendialog1(){
-        $("#dialog").fadeIn(500);	
+        $("#dialog").fadeIn(500);
 		$('.dialog-text').html('<h1>Первой пришла машинка №2</h1>');
-		
+
     }
 	function opendialog2(){
-        $("#dialog").fadeIn(500);	
+        $("#dialog").fadeIn(500);
 		$('.dialog-text').html('<h1>Первой пришла машинка №1</h1>')
     }
 	function opendialog3(){
-        $("#dialog").fadeIn(500);	
+        $("#dialog").fadeIn(500);
 		$('.dialog-text').html('<h1>Машинки пришли одновременно</h1>')
-    }	
+    }
 
     function closedialog(){
         $("#dialog").fadeOut(500); //плавное исчезание блока
