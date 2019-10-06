@@ -110,6 +110,8 @@ div.choose {
 }
 
 div.start {
+	position: relative;
+	left: -6px;
 	width: 90%;
 	height: 40px;
 	background-color : #f27a7a;
