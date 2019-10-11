@@ -27,7 +27,7 @@ $("div.start").on('click', function() {
 	}
 	var speed2 = +$('input.s').val();
 	if (speed2 == 0){
-		speed2 = 20;
+		speed2 = 10;
 	}
 	$('div.hide').slideUp(500);
 	$('#roadsCar').slideDown(1000);
@@ -38,23 +38,23 @@ $("div.start").on('click', function() {
 	var t2 = widthField2 / speed2;
 	setTimeout(function(){
 		if (t1 > t2) {
-		$('img.second.car').animate({left:  (widthField1 - (+$('img.second.car').width() + 10)) + 'px'}, t2 * 100);
-		$('img.first.car').animate({left:  (widthField1 - (+$('img.first.car').width() + 10)) + 'px'}, t1 * 100, function(){
+			$('img.second.car').animate({left:  (widthField1 - (+$('img.second.car').width() + 10)) + 'px'}, t2 * 100);
+			$('img.first.car').animate({left:  (widthField1 - (+$('img.first.car').width() + 10)) + 'px'}, t1 * 100, function(){
 			$('img.car').css({left:	'5px'});
-			setTimeout(opendialog1(), 1000);
+				setTimeout(opendialog1(), 1000);
 				});
 			} else if (t1 < t2) {
-		$('img.first.car').animate({left:  (widthField1 - (+$('img.first.car').width() + 10)) + 'px'}, t1 * 100);
-		$('img.second.car').animate({left:  (widthField1 - (+$('img.second.car').width() + 10)) + 'px'}, t2 * 100, function(){
-			$('img.car').css({left:	'5px'});
-			setTimeout(opendialog2(), 1000);
+				$('img.first.car').animate({left:  (widthField1 - (+$('img.first.car').width() + 10)) + 'px'}, t1 * 100);
+				$('img.second.car').animate({left:  (widthField1 - (+$('img.second.car').width() + 10)) + 'px'}, t2 * 100, function(){
+				$('img.car').css({left:	'5px'});
+					setTimeout(opendialog2(), 1000);
 
 				});
 			} else if (t1 == t2) {
 				$('img.first.car').animate({left:  (widthField1 - (+$('img.first.car').width() + 10)) + 'px'}, t1 * 100);
 				$('img.second.car').animate({left:  (widthField1 - (+$('img.second.car').width() + 10)) + 'px'}, t2 * 100, function(){
 				$('img.car').css({left:  '5px'});
-				setTimeout(opendialog3(), 1000);
+					setTimeout(opendialog3(), 1000);
 
 			});
 		}
@@ -63,20 +63,20 @@ $("div.start").on('click', function() {
 
     function opendialog1(){
         $("#dialog").fadeIn(500);
-		$('.dialog-text').html('<h1>Первой пришла машинка №2</h1>');
+				$('.dialog-text').html('<h1>Первой пришла машинка №2</h1>');
 
     }
 	function opendialog2(){
         $("#dialog").fadeIn(500);
-		$('.dialog-text').html('<h1>Первой пришла машинка №1</h1>')
+				$('.dialog-text').html('<h1>Первой пришла машинка №1</h1>')
     }
 	function opendialog3(){
         $("#dialog").fadeIn(500);
-		$('.dialog-text').html('<h1>Машинки пришли одновременно</h1>')
+				$('.dialog-text').html('<h1>Машинки пришли одновременно</h1>')
     }
 
     function closedialog(){
         $("#dialog").fadeOut(500); //плавное исчезание блока
-		$('#roadsCar').fadeOut(500);
-		$('div.hide').fadeIn(500);
+				$('#roadsCar').fadeOut(500);
+				$('div.hide').fadeIn(500);
     }
