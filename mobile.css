@@ -68,8 +68,8 @@ input {
 	display: block;
 	width: 150px;
 	border: none;
-    margin: 5px 0px;
-    border-radius: 10px;
+  margin: 5px 0px;
+  border-radius: 10px;
 }
 
 ul {
@@ -80,7 +80,7 @@ ul {
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 
 }
 
@@ -177,7 +177,7 @@ img.car {
     padding-bottom: 10px;
     background-color: #e98585;
     border-radius: 10px;
-	font-family: "CiscoSans";
+		font-family: "CiscoSans";
 }
 /* Позиционируем верхний бар */
 .dialog-title{
@@ -215,7 +215,7 @@ img.car {
     content: "x";
     font-size: 20px;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
-	outline: none;
+		outline: none;
 }
 
 .dialog-text {
