@@ -33,7 +33,6 @@ $("div.start").on('click', function() {
 	$('#roadsCar').slideDown(1000);
 	var widthField1 = +$('#firstRoad').width();
 	var widthField2 = +$('#secondRoad').width();
-	var $width = (widthField1 - (+$('img.second.car').width()) + 10) + 'px';
 	var t1 = widthField1 / speed1;
 	var t2 = widthField2 / speed2;
 	setTimeout(function(){
