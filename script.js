@@ -75,7 +75,7 @@ $("div.start").on('click', function() {
     }
 
     function closedialog(){
-        $("#dialog").fadeOut(500); //плавное исчезание блока
+        $("#dialog").fadeOut(500); 
 				$('#roadsCar').fadeOut(500);
 				$('div.hide').fadeIn(500);
     }
