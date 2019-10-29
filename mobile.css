@@ -165,7 +165,7 @@ img.car {
 /* Позиционируем блок с контентом */
 .dialog-content{
     position: relative;
-	top: 95px;
+
     overflow: auto;
     overflow-y: auto;
     padding: 0 10 0 10;
