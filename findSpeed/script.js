@@ -11,7 +11,7 @@ $('#dano h3:eq(1)').append(seconds);
 var min2 = 50;
 var max2 = 100;
 var way  = Math.floor(Math.random() * (max2 - min2)) + min2;
-var r = Math.floor(way / seconds);
+var r = Math.round(way / seconds);
 console.log(r);
 
 $('.dialog-text p:eq(0)').append(' ' + way + ' метров');
