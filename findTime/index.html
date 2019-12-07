@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" media="screen and (min-width: 1041px)" href="style.css">
+  <link rel="stylesheet" media="screen and (max-width: 1040px)" href="mobile.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Скорость движения</title>
+</head>
+<body>
+  <div class="back-dialog gin" id="dialog">
+    <div class="dialog-content">
+        <a class='close-dialog' href='javascript: closedialog()'></a>
+        <div class='dialog-text'>
+          <h2>Условие</h2>
+          <p>Машинка проехала расстояние</p>
+          <p>Со скоростью </p>
+          <p>Найди время машинки</p>
+        </div>
+    </div>
+  </div>
+  <header>
+    <h1>Скорость Движения</h1>
+  </header>
+  <main>
+    <h1>Найди время</h1>
+    <div id="road">
+      <img src="../images/redCar.png" alt="car">
+    </div>
+    <h2 id="an">Введи ответ</h2>
+    <input id="answer" type="text">
+    <h2 id="d">Тебе извесно</h2>
+    <div id="dano">
+      <h3>Расстояние:</h3>
+      <h3>Скорость:</h3>
+    </div>
+    <div id="check"><p>Проверить</p></div>
+  </main>
+   <div class="back-dialog gin" id="di" >
+    <div class="dialog-content">
+        <a class='close-dialog' href='javascript: window.location.reload()'></a>
+        <div class='dialog-text1'>
+          <div class="returnToMainMenu"><a href="../index.html">Вернуться в главное меню</a></div>
+        </div>
+    </div>
+  </div>
+  <script src="http://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+   <script src="script.js"></script>
+</body>
+</html>
