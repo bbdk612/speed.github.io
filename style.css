@@ -33,7 +33,7 @@ header {
 	color: black;
 }
 
-#header {
+header h1 {
 	position: relative;
 	bottom: 10px;
 	font-family: "Thin Pixels";
@@ -49,14 +49,14 @@ main {
 	padding-right: 5%;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	height: 700px;
+	height: 500px;
+	text-align: center;
 }
 
 
 main h1{
 	font-family: "Impact";
-	color: #282828;
-	border-bottom: 1px solid white;
+	color: black;
 }
 
 input {
@@ -65,11 +65,133 @@ input {
 	display: block;
 	width: 200px;
 	border: none;
-    margin: 5px 0px;
-    border-radius: 10px;
+  margin: 5px 0px;
+  border-radius: 10px;
 }
 
-.s {
+.button1 {
+	font-family: Impact;
+	background-color: #7e72f3;
+	margin: 15px 38%;
+	text-align: center;
+	width: 250px;
+	height: 100px;
+	border-radius: 10px;
+}
+
+@keyframes button {
+	to{
+		background-color: #584faa;
+	}
+}
+
+.button1:hover {
+	animation-duration: 1s;
+  animation-name: button;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes notbutton {
+	from{
+		background-color: #584faa;
+	}
+	to{
+		background-color: #7e72f3;
+	}
+}
+
+.button1:not(:hover) {
+	animation-duration: 1s;
+  animation-name: notbutton;
+	animation-fill-mode: forwards;
+
+}
+
+/* #584faa */
+
+.button1 a{
+	color: black;
+	font-size: x-large;
+	position:relative;
+	top: 34%;
+}
+
+.button1 a:visited{
+	color: black;
+}
+
+.button2 {
+	color: black;
+	font-family: Impact;
+	background-color: #7e72f3;
+	margin: 15px 38%;
+	text-align: center;
+	width: 250px;
+	height: 100px;
+	border-radius: 10px;
+}
+
+.button2:hover {
+	animation-duration: 1s;
+  animation-name: button;
+	animation-fill-mode: forwards;
+
+}
+
+.button2:not(:hover) {
+	animation-duration: 1s;
+  animation-name: notbutton;
+	animation-fill-mode: forwards;
+
+}
+
+.button2 a{
+	font-size: x-large;
+	position:relative;
+	top: 34%;
+}
+
+.button2 a:visited{
+	color: black;
+}
+
+.button3 {
+	color: black;
+	font-family: Impact;
+	background-color: #7e72f3;
+	margin: 15px 38%;
+	text-align: center;
+	width: 250px;
+	height: 100px;
+	border-radius: 10px
+}
+
+.button3:hover {
+	animation-duration: 1s;
+  animation-name: button;
+	animation-fill-mode: forwards;
+
+}
+
+.button3:not(:hover) {
+	animation-duration: 1s;
+  animation-name: notbutton;
+	animation-fill-mode: forwards;
+
+}
+
+.button3 a{
+	font-size: x-large;
+	position:relative;
+	top: 34%;
+}
+
+.button3 a:visited{
+	color: black;
+}
+
+/* .s {
 	position: relative;
 	top: 60px;
 }
@@ -241,4 +363,4 @@ img.car {
     font-size: 20px;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
 	outline: none;
-}
+} */
